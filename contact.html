@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        body{
+            background: url(bg7.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(35, 58, 158);
+        }
+        .left{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+
+        }
+        .right{
+            float: right;
+            position: absolute;
+            top: 7px;
+            right: 70px;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        .right li{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            display: inline-block;
+            list-style: none;
+        }
+        .right li a{
+            color: rgb(24, 35, 129);
+            padding: 14px 30px;
+        }
+        .link li a:hover{
+            transform: translateY(-10px);
+            text-decoration: underline;
+
+        }
+        .right li a:active{
+            text-decoration: underline;
+        }
+        .active{
+            text-decoration: underline;
+            color: rgb(188, 188, 177);
+        }
+        .logo{
+            height: 31px;
+            width: 29px;
+            position: absolute;
+            top: 16px;
+            left: 10px;        
+        }
+        .container{
+            position: absolute;
+            margin-top: 160px;
+            margin-left: -9px;
+            background-color: rgb(255, 255, 255);
+            height: 517px;
+            width: 1000px;
+            color: black;
+        }
+        .heading{
+            font-size: 25px;
+            font-weight: 400;
+            font-family: fantasy;
+            position: absolute;
+            margin-top: 3px;
+            margin-left: 600px;
+
+
+        }
+        .image{
+            height: 74px;
+            width: 180px;
+            position: absolute;
+            margin-top: 73px;
+            margin-left: 610px;        
+
+        }
+        
+       
+        #name{
+            position: absolute;
+            margin-top: 198px;
+            margin-left: 213px;
+            width: 240px;
+        }
+        #email{
+            position: absolute;
+            margin-top: 220px;
+            margin-left: 213px;
+            width: 240px;
+        }
+        #message{
+            position: absolute;
+            margin-top: 242px;
+            margin-left: 213px;
+            width: 240px;            
+        }
+        .contact{
+            position: absolute;
+            margin-top: 155px;
+            margin-left: 828px;
+        }
+        button{
+            color: rgb(255, 255, 255);
+            background-color: rgb(1, 28, 127);
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            height: 33px;
+            position: absolute;
+            margin-top: 576px;
+            margin-left: 270px;
+        }
+        button:hover{
+            transform: translateY(-3px);
+            cursor: pointer;
+        }
+        .contact{
+            font-size: 22px;
+            
+        }
+        .email::before{
+            content: "\f113";
+        }
+        .mobile::before{
+            content: "\f106";
+        }
+        .address::before{
+            content: "\f105";
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <img src="logo.webp" alt="" class="logo">
+    <nav class="navbar">
+        <div class="left">Portfolio</div>
+        <div class="right">
+        <ul>
+            <li  class="link"><a href="yash.html">Home</a></li>
+            <li><a href="eateries.html" class="link">Restaurants</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+            
+            <li class="active"><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+        </div>
+        <div class="container">
+            <div class="heading">
+                <h2>GET IN TOUCH</h2>
+            </div>
+            <img src="line.jpg" alt="" class="image">
+            <form action="">
+                <input type="text" name="NAME" id="name" placeholder="NAME">
+                <input type="text" name="EMAIL" id="email" placeholder="EMAIL">
+                <textarea name="write your message" id="message" cols="30" rows="10" placeholder="Write your message"></textarea>
+            </form>
+                <div class="contact">
+                    <p class="email">EMAIL:</p>
+                    yashpriyadarshy03@gmail.com
+                    <br>
+                    <p class="mobile">MOBILE:</p>
+                    +91 8697422897
+                    <br>
+                    <p class="address">ADDRESS:</p>
+                    Rameshwar malia lane, howrah, west bengal
+
+                </div>
+        </div>
+        <button>send message</button>
+</body>
+</html>
